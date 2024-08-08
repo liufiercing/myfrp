@@ -4,11 +4,11 @@ After=network.target
 
 [Service]
 Type=simple
-User=nobody
+User=liuf
 Restart=on-failure
 RestartSec=5s
-ExecStart=/usr/bin/frpc -c /etc/frp/frpc.ini
-ExecReload=/usr/bin/frpc reload -c /etc/frp/frpc.ini
+ExecStart=/home/liuf/myfrp/frpc -c /home/liuf/myfrp/cy.ini
+ExecReload=/home/liuf/myfrp/frpc -c /home/liuf/myfrp/cy.ini
 LimitNOFILE=1048576
 
 [Install]
